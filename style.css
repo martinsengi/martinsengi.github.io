@@ -1,0 +1,14 @@
+/* Vaultumble public pages: system fonts only, no trackers, light and dark. */
+:root { --bg: #ffffff; --text: #17191d; --muted: #4c5260; --link: #6b4f12; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #17191d; --text: #f4f5f7; --muted: #b6bac4; --link: #e4d29f; }
+}
+html { background: var(--bg); color: var(--text); }
+body { margin: 0; font: 17px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+main { max-width: 42rem; margin: 0 auto; padding: 2rem 1rem 4rem; }
+h1 { font-size: 1.9rem; line-height: 1.2; margin: 0 0 .5rem; }
+h2 { font-size: 1.25rem; margin: 2rem 0 .5rem; }
+p, li { overflow-wrap: anywhere; }
+a { color: var(--link); }
+.date, .tagline, .small, .back { color: var(--muted); }
+.small { font-size: .9rem; }
